@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="499.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Calculator.CalculatorController">
+   <children>
+      <Button fx:id="buttonSeven" layoutX="55.0" layoutY="175.0" mnemonicParsing="false" onAction="#addSeven" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Label fx:id="labelResult" layoutX="66.0" layoutY="62.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="74.0" prefWidth="298.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonEight" layoutX="138.0" layoutY="175.0" mnemonicParsing="false" onAction="#addEight" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonNine" layoutX="221.0" layoutY="175.0" mnemonicParsing="false" onAction="#addNine" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonFour" layoutX="55.0" layoutY="251.0" mnemonicParsing="false" onAction="#addFour" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonFive" layoutX="138.0" layoutY="251.0" mnemonicParsing="false" onAction="#addFive" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonSix" layoutX="221.0" layoutY="251.0" mnemonicParsing="false" onAction="#addSix" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonOne" layoutX="55.0" layoutY="328.0" mnemonicParsing="false" onAction="#addOne" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonTwo" layoutX="138.0" layoutY="328.0" mnemonicParsing="false" onAction="#addTwo" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonThree" layoutX="221.0" layoutY="328.0" mnemonicParsing="false" onAction="#addThree" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonZero" layoutX="55.0" layoutY="408.0" mnemonicParsing="false" onAction="#addZero" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonComma" layoutX="138.0" layoutY="408.0" mnemonicParsing="false" onAction="#addComma" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonEquals" layoutX="221.0" layoutY="408.0" mnemonicParsing="false" onAction="#printResult" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonDivision" layoutX="305.0" layoutY="175.0" mnemonicParsing="false" onAction="#addDivisionSymbol" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonMultiply" layoutX="305.0" layoutY="251.0" mnemonicParsing="false" onAction="#addMultiplySymbol" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonSubtraction" layoutX="305.0" layoutY="328.0" mnemonicParsing="false" onAction="#addSubtractionSymbol" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button fx:id="buttonSum" layoutX="305.0" layoutY="408.0" mnemonicParsing="false" onAction="#addSumSymbol" opacity="0.0" prefHeight="65.0" prefWidth="70.0" text="Button" />
+      <Button layoutX="313.0" layoutY="141.0" mnemonicParsing="false" onAction="#clearLabelText" prefHeight="26.0" prefWidth="60.0" text="Clear" />
+      <Button layoutX="249.0" layoutY="141.0" mnemonicParsing="false" onAction="#removeOneChar" prefHeight="26.0" prefWidth="60.0" text="Remove" />
+   </children>
+</AnchorPane>

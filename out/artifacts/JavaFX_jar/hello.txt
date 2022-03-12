@@ -1,0 +1,1 @@
+java --module-path C:\Users\18126\Downloads\JavaFX\javafx-sdk-15.0.1\lib -jar JavaFX.jar

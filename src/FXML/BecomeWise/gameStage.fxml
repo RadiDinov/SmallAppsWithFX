@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1391.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BecomeWise.GameController">
+   <children>
+      <Label fx:id="labelQuestion" alignment="CENTER" layoutX="259.0" layoutY="519.0" prefHeight="136.0" prefWidth="886.0" text="ccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbccccccccccccddddcc" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelA" layoutX="333.0" layoutY="606.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelC" layoutX="333.0" layoutY="664.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelB" layoutX="785.0" layoutY="606.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelD" layoutX="785.0" layoutY="664.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="262.0" layoutY="650.0" mnemonicParsing="false" onAction="#selectedA" opacity="0.0" prefHeight="50.0" prefWidth="400.0" text="Button" />
+      <Button layoutX="262.0" layoutY="705.0" mnemonicParsing="false" onAction="#selectedC" opacity="0.0" prefHeight="50.0" prefWidth="400.0" text="Button" />
+      <Button layoutX="714.0" layoutY="650.0" mnemonicParsing="false" onAction="#selectedB" opacity="0.0" prefHeight="50.0" prefWidth="400.0" text="Button" />
+      <Button layoutX="714.0" layoutY="705.0" mnemonicParsing="false" onAction="#selectedD" opacity="0.0" prefHeight="50.0" prefWidth="400.0" text="Button" />
+      <Label fx:id="pointerSeven" alignment="CENTER" layoutX="1005.0" layoutY="141.0" prefHeight="38.0" prefWidth="74.0" textFill="#b8ff4e">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerEight" alignment="CENTER" layoutX="1005.0" layoutY="103.0" prefHeight="38.0" prefWidth="74.0" textFill="#5fff2a">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerNine" alignment="CENTER" layoutX="1005.0" layoutY="64.0" prefHeight="38.0" prefWidth="74.0" textFill="LIME">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerSix" alignment="CENTER" layoutX="1005.0" layoutY="181.0" prefHeight="38.0" prefWidth="74.0" textFill="#f4ff23">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerFive" alignment="CENTER" layoutX="1005.0" layoutY="221.0" prefHeight="38.0" prefWidth="74.0" textFill="#ffc800">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerFour" alignment="CENTER" layoutX="1005.0" layoutY="261.0" prefHeight="38.0" prefWidth="74.0" textFill="#ff9600">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerThree" alignment="CENTER" layoutX="1005.0" layoutY="301.0" prefHeight="38.0" prefWidth="74.0" textFill="#ff6400">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerTwo" alignment="CENTER" layoutX="1005.0" layoutY="340.0" prefHeight="38.0" prefWidth="74.0" textFill="#ff3200">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerOne" alignment="CENTER" layoutX="1005.0" layoutY="381.0" prefHeight="38.0" prefWidth="74.0" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointerZero" alignment="CENTER" layoutX="1005.0" layoutY="421.0" prefHeight="38.0" prefWidth="74.0" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCounter" alignment="CENTER" layoutX="659.0" layoutY="687.0" prefHeight="28.0" prefWidth="56.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUsedSecondHint" alignment="CENTER" layoutX="1040.0" layoutY="-5.0" prefHeight="29.0" prefWidth="77.0" textFill="RED">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUsedFirstHint" alignment="CENTER" layoutX="953.0" layoutY="-4.0" prefHeight="29.0" prefWidth="77.0" textFill="RED">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUsedThirdHint" alignment="CENTER" layoutX="1128.0" layoutY="-5.0" prefHeight="29.0" prefWidth="77.0" textFill="RED">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="994.0" layoutY="474.0" mnemonicParsing="false" onAction="#getGrade" opacity="0.0" prefHeight="38.0" prefWidth="159.0" text="Button" />
+      <Button layoutX="1036.0" layoutY="8.0" mnemonicParsing="false" onAction="#secondHint" opacity="0.0" prefHeight="47.0" prefWidth="84.0" text="Button" />
+      <Button layoutX="949.0" layoutY="8.0" mnemonicParsing="false" onAction="#firstHint" opacity="0.0" prefHeight="47.0" prefWidth="84.0" text="Button" />
+      <Button layoutX="1125.0" layoutY="8.0" mnemonicParsing="false" onAction="#thirdHint" opacity="0.0" prefHeight="47.0" prefWidth="84.0" text="Button" />
+   </children>
+</AnchorPane>

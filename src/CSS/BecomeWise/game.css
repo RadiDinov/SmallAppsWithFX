@@ -1,0 +1,5 @@
+.root {
+     -fx-background-image: url('/Assets/gameplay.png');
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: center center;
+}

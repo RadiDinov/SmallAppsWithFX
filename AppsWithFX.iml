@@ -20,5 +20,14 @@
         <jarDirectory url="file://$USER_HOME$/Downloads/JavaFX-15.0.1/javafx-sdk-15.0.1/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Program Files (x86)/MySQL/MySQL Connector J 8.0/mysql-connector-java-8.0.27.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -19,14 +19,26 @@ public class MainController {
     //GUI
 
     public void openCalculatorApp(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../FXML/calculator.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../FXML/Calculator/calculator.fxml"));
         this.root = loader.load();
         this.stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
         this.scene = new Scene(root, 423, 499);
         //Add .css file
-        URL url = this.getClass().getResource("../CSS/calculator.css");
-        String css = url.toExternalForm();
-        scene.getStylesheets().add(css);
+        scene.getStylesheets().add("/CSS/Calculator/calculator.css");
+        //Add .css file
+        this.stage.setScene(scene);
+        this.stage.centerOnScreen();
+        scene.getRoot().requestFocus();
+        stage.show();
+    }
+
+    public void openBecomeWiseApp(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../FXML/BecomeWise/startStage.fxml"));
+        this.root = loader.load();
+        this.stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+        this.scene = new Scene(root, 637, 478);
+        //Add .css file
+        scene.getStylesheets().add("/CSS/BecomeWise/start.css");
         //Add .css file
         this.stage.setScene(scene);
         this.stage.centerOnScreen();

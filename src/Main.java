@@ -4,11 +4,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
+
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        File curDir = new File("src/Assets");
+        getAllFiles(curDir);
+
+
         primaryStage.setTitle("Apps with JavaFX");
         Parent root = FXMLLoader.load(getClass().getResource("FXML/main.fxml"));
         Scene scene = new Scene(root, 600, 455);
@@ -24,4 +30,19 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+    private static void getAllFiles(File curDir) {
+
+        File[] filesList = curDir.listFiles();
+        for (File f : filesList) {
+            if (f.isDirectory())
+                System.out.println(f.getName());
+            if (f.isFile()) {
+                System.out.println(f.getName());
+            }
+        }
+    }
 }
+
+//TODO: when 6 grade is reached make a finish
+//TODO: add replay button
