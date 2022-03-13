@@ -43,6 +43,3 @@ public class Main extends Application {
         }
     }
 }
-
-//TODO: when 6 grade is reached make a finish
-//TODO: add replay button

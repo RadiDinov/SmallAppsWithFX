@@ -65,6 +65,15 @@ public class GameController {
 
             if (gameProgress == 0) {
                 pointerZero.setText("➤");
+                pointerOne.setText("");
+                pointerTwo.setText("");
+                pointerThree.setText("");
+                pointerFour.setText("");
+                pointerFive.setText("");
+                pointerSix.setText("");
+                pointerSeven.setText("");
+                pointerEight.setText("");
+                pointerNine.setText("");
             } else if (gameProgress == 1) {
                 pointerZero.setText("");
                 pointerOne.setText("➤");
@@ -305,9 +314,28 @@ public class GameController {
     }
 
     public void selectedA() throws SQLException {
+        if(endGame) {
+            endGame = false;
+            firstHint = false;
+            secondHint = false;
+            thirdHint = false;
+            labelUsedFirstHint.setText("");
+            labelUsedSecondHint.setText("");
+            labelUsedThirdHint.setText("");
+            gameProgress = 0;
+            askedQuestionsIDS.removeAll(askedQuestionsIDS);
+            initialize();
+            return;
+        }
         if (correctAnswer.equals("A")) {
             gameProgress++;
-            initialize();
+            if(gameProgress == 9) {
+                endGame = true;
+                setTextsToGameEnded();
+                System.out.println("Оценка: 6.00");
+            } else {
+                initialize();
+            }
         } else {
             endGame = true;
             //TODO: end game
@@ -317,9 +345,31 @@ public class GameController {
     }
 
     public void selectedB() throws SQLException {
+        if(endGame) {
+            endGame = false;
+            firstHint = false;
+            secondHint = false;
+            thirdHint = false;
+            labelUsedFirstHint.setText("");
+            labelUsedSecondHint.setText("");
+            labelUsedThirdHint.setText("");
+            gameProgress = 0;
+            askedQuestionsIDS.removeAll(askedQuestionsIDS);
+            System.out.println(askedQuestionsIDS.size());
+            initialize();
+            return;
+        }
         if (correctAnswer.equals("B")) {
             gameProgress++;
-            initialize();
+            if(gameProgress == 9) {
+                pointerEight.setText("");
+                pointerNine.setText("➤");
+                endGame = true;
+                setTextsToGameEnded();
+                System.out.println("Оценка: 6.00");
+            } else {
+                initialize();
+            }
         } else {
             endGame = true;
             //TODO: end game
@@ -329,9 +379,29 @@ public class GameController {
     }
 
     public void selectedC() throws SQLException {
+        if(endGame) {
+            endGame = false;
+            firstHint = false;
+            secondHint = false;
+            thirdHint = false;
+            labelUsedFirstHint.setText("");
+            labelUsedSecondHint.setText("");
+            labelUsedThirdHint.setText("");
+            gameProgress = 0;
+            askedQuestionsIDS.removeAll(askedQuestionsIDS);
+            System.out.println(askedQuestionsIDS.size());
+            initialize();
+            return;
+        }
         if (correctAnswer.equals("C")) {
             gameProgress++;
-            initialize();
+            if(gameProgress == 9) {
+                endGame = true;
+                setTextsToGameEnded();
+                System.out.println("Оценка: 6.00");
+            } else {
+                initialize();
+            }
         } else {
             endGame = true;
             //TODO: end game
@@ -341,9 +411,29 @@ public class GameController {
     }
 
     public void selectedD() throws SQLException {
+        if(endGame) {
+            endGame = false;
+            firstHint = false;
+            secondHint = false;
+            thirdHint = false;
+            labelUsedFirstHint.setText("");
+            labelUsedSecondHint.setText("");
+            labelUsedThirdHint.setText("");
+            gameProgress = 0;
+            askedQuestionsIDS.removeAll(askedQuestionsIDS);
+            System.out.println(askedQuestionsIDS.size());
+            initialize();
+            return;
+        }
         if (correctAnswer.equals("D")) {
             gameProgress++;
-            initialize();
+            if(gameProgress == 9) {
+                endGame = true;
+                setTextsToGameEnded();
+                System.out.println("Оценка: 6.00");
+            } else {
+                initialize();
+            }
         } else {
             endGame = true;
             //TODO: end game
@@ -363,20 +453,61 @@ public class GameController {
 
     private void getGradeAfterWrongAnswer() {
         if(gameProgress < 3) {
+            gameProgress = 0;
             System.out.println("Оценка: 2.00");
         } else if(gameProgress < 7) {
+            gameProgress = 3;
             System.out.println("Оценка: 3.00");
         } else if(gameProgress <= 9) {
+            gameProgress = 7;
             System.out.println("Оценка: 5.00");
         }
     }
 
     private void setTextsToGameEnded() {
-        labelA.setText("Играта приключи!");
-        labelB.setText("Играта приключи!");
-        labelC.setText("Играта приключи!");
-        labelD.setText("Играта приключи!");
-        labelQuestion.setText("Играта приключи!");
+        labelA.setText("Играй пак");
+        labelB.setText("Играй пак");
+        labelC.setText("Играй пак");
+        labelD.setText("Играй пак");
+        switch(gameProgress) {
+            case 0, 1: {
+                labelQuestion.setText("Оценка: 2.00");
+                break;
+            }
+            case 2: {
+                labelQuestion.setText("Оценка: 2.50");
+                break;
+            }
+            case 3: {
+                labelQuestion.setText("Оценка: 3.00");
+                break;
+            }
+            case 4: {
+                labelQuestion.setText("Оценка: 3.50");
+                break;
+            }
+            case 5: {
+                labelQuestion.setText("Оценка: 4.00");
+                break;
+            }
+            case 6: {
+                labelQuestion.setText("Оценка: 4.50");
+                break;
+            }
+            case 7: {
+                labelQuestion.setText("Оценка: 5.00");
+                break;
+            }
+            case 8: {
+                labelQuestion.setText("Оценка: 5.50");
+                break;
+            }
+            case 9: {
+                labelQuestion.setText("Оценка: 6.00");
+                break;
+            }
+        }
+
     }
 
 }

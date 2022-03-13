@@ -7,29 +7,29 @@
 
 <AnchorPane prefHeight="768.0" prefWidth="1391.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BecomeWise.GameController">
    <children>
-      <Label fx:id="labelQuestion" alignment="CENTER" layoutX="259.0" layoutY="519.0" prefHeight="136.0" prefWidth="886.0" text="ccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbccccccccccccddddcc" textFill="WHITE">
+      <Label fx:id="labelQuestion" alignment="CENTER" layoutX="255.0" layoutY="519.0" prefHeight="136.0" prefWidth="924.0" text="ccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbccccccccccccddddcc" textFill="WHITE">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label fx:id="labelA" layoutX="333.0" layoutY="606.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+      <Label fx:id="labelA" layoutX="328.0" layoutY="606.0" prefHeight="136.0" prefWidth="544.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaaaaaaaaaaaaaaaaaaaaa" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelC" layoutX="333.0" layoutY="664.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+      <Label fx:id="labelC" layoutX="328.0" layoutY="664.0" prefHeight="136.0" prefWidth="551.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelB" layoutX="785.0" layoutY="606.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+      <Label fx:id="labelB" layoutX="780.0" layoutY="606.0" prefHeight="136.0" prefWidth="585.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelD" layoutX="785.0" layoutY="664.0" prefHeight="136.0" prefWidth="294.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
+      <Label fx:id="labelD" layoutX="780.0" layoutY="664.0" prefHeight="136.0" prefWidth="574.0" text="qwertyuiop[]asdfghjkl;'\zxcvbnaa" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
          </font>
       </Label>
       <Button layoutX="262.0" layoutY="650.0" mnemonicParsing="false" onAction="#selectedA" opacity="0.0" prefHeight="50.0" prefWidth="400.0" text="Button" />
